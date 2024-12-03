@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../fonts/SourceSansPro-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url('../fonts/SourceSansPro-Light.otf');
+}
+
+@font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('../fonts/spincycle_ot.otf');
+}
+
+:root {
+    --font-family: "Source Sans Pro Regular", sans-serif;
+    --second-family: "Coiny", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+.header {
+    width: 1100 px;
+    height: 29 px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 171px;
+    background-color: grey;
+    color: white;
+    font-family: var(--font-family);
+}
+
+#header-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.menu {
+    width: 234px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.menu-item {
+    width: 34px;
+    height: 15px;
+    color: #FFF;
+    font-family: var(--font-family);
+    weight: 700;
+    size: 12px;
+    line-height: 15px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
