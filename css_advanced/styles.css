@@ -20,7 +20,6 @@
 
 :root {
     --font-family: "Source Sans Pro Regular", sans-serif;
-    --second-family: "Coiny", sans-serif;
 }
 
 * {
@@ -30,18 +29,27 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/background2.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
 
 }
 
-.header {
-    width: 1100 px;
-    height: 29 px;
+
+header {
+    width: 1440px;
+    padding: 35px 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 35px;
-    margin-left: 171px;
-    background-color: grey;
+    background-color: transparent;
     color: white;
     font-family: var(--font-family);
 }
@@ -59,7 +67,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 100px;
 }
 
 .menu-item {
@@ -67,9 +74,132 @@ body {
     height: 15px;
     color: #FFF;
     font-family: var(--font-family);
-    weight: 700;
-    size: 12px;
+    font-weight: 700;
+    font-size: 12px;
     line-height: 15px;
+    text-decoration: none;
+}
+
+.hero {
+    width: 1440px;
+    height: 1093px;
+
+}
+
+#hero-container {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+#hero-container h1 {
+    width: auto; /* Permet au contenu de prendre sa taille naturelle */
+    height: auto; /* Supprime la contrainte de hauteur */
+    margin-top: 100px; /* Ajusté pour remonter le titre */
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 150px;
+    color: #FFF;
+    white-space: nowrap; /* Empêche les mots de passer à la ligne */
+}
+
+#hero-tags {
+    margin-top: 20px; /* Réduit l'espace entre le titre et les mots */
+    display: flex;
+    gap: 20px; /* Ajoute de l'espace entre les mots */
+    justify-content: center; /* Centre les mots horizontalement */
+    gap: 50px; /* Ajoute de l'espace entre les mots */
+    font-family: Coiny, sans-serif;
+}
+
+#hero-container span {
+    display: block; /* Place chaque mot sur une ligne séparée */
+    font-size: 20px; /* Ajustez si nécessaire */
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-family);
+}
+
+
+#hero-container button {
+    width: 200px;
+    height: 50px;
+    margin-top: 50px; /* Ajustez si nécessaire */
+    background-color: #C271FF;
+    color: #FFF;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#hero-container button:hover {
+    background-color: #A44BFF;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.highlight {
+    color: #C271FF; /* Change 'violet' to any color you prefer */
+}
+
+#team {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team h2 {
+    font-family: var(--font-family);
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 50px; /* Ajoute de l'espace sous le titre */
+}
+
+#team-member {
+    display: flex;
+    justify-content: space-around; /* Espacement entre les membres de l'équipe */
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante si nécessaire */
+    gap: 30px; /* Espace entre les éléments */
+    width: 1000px; /* Limite la largeur pour qu'il soit plus joli */
+    height: 240px; /* Hauteur des éléments */
+}
+
+
+#team-member img {
+    width: 100%; /* Image qui prend toute la largeur du conteneur */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member_items {
+    width: 150px;   
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.team-member_items h3 {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.team-member_items p {
+    padding-top: 5px;
 }
 
 main {
@@ -79,3 +209,59 @@ main {
     flex-direction: column;
     width: 100%;
 }
+
+#quote {
+    width: 1440px;
+    height: 392px;
+    background-color: #C271FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#testimonials{
+    width: 943px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#testimonials-text {
+    width: 730px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#testimonials-text blockquote {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFF;
+    margin-bottom: 35px;
+}
+
+#testimonials-text p:first-of-type {
+    font-weight: 700; /* Mettre "Author" en gras */
+    color: #FFF;
+    width: 129px;
+    height: 34px;
+    font-size: 22px;
+    font-style: Bold;
+    margin-bottom: 10px;
+}
+
+#testimonials-text p:last-of-type {
+    font-style: italic; /* Mettre "Weather presenter" en italique */
+    color: #FFF;
+    width: 165px;
+    height: 34px;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
