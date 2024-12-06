@@ -523,7 +523,7 @@ main {
 }
 
 footer {
-    width: 100%; /* Adapter à l'écran */
+    width: 1440px; /* Adapter à l'écran */
     height: 249px;
     background-color: #071629;
     display: flex;
